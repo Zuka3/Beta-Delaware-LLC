@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+  .page-heading {
+    width: 90%;
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .nav-brand {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #mc_embed_signup .size1of2,
+  #mc_embed_signup .mc-field-group {
+    width: 100%;
+  }
+}

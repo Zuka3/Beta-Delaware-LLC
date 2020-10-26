@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="0LMIVU0auPv1ZKiUSlZ1Nx4vWaNf3M-Acgj3pgqfC8Q"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static',filename='img/favicon.ico') }}"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/final/styles.css') }}"
+    />
+
+    <!-- Custom fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Tag Manager -->
+    <script src="{{ url_for('static',filename='scripts/google_tag_manager.js') }}"></script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Canonical start -->
+    <link
+      rel="canonical"
+      href='{{"https://coloradollcattorney.com"+request.path}}'
+    />
+    <!-- Canonical end -->
+
+    <!-- Business Schema start -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Colorado Attorney",
+        "founder": {
+          "@type": "Person",
+          "givenName": "Mark",
+          "gender": "Male",
+          "nationality": "https://en.wikipedia.org/wiki/USA",
+          "worksFor": "https://coloradollcattorney.com/",
+          "image": "https://coloradollcattorney.com/static/img/mark-pierce.jpg",
+          "name": "Mark Pierce",
+          "familyName": "Pierce"
+        },
+        "telephone": "+1-720-204-2444",
+        "name": "Colorado LLC Attorney",
+        "logo": "https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/27709708_450963341988519_993321238775389300_o.png?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=nU7LxifZSToAX_vVrIz&_nc_ht=scontent-cdg2-1.xx&oh=ffd4239e670ce685399f505272d2c5eb&oe=5F7457E2",
+        "description": "We make registering a business easy and fast with our 24 hour guaranteed turn around. Our $99 Colorado LLC Formation service includes all state fees. We file your Articles of Organization, complete your Operating Agreement, act as your Registered Agent and more. Most importantly, we do everything right the first time.",
+        "openingHours": "9:00 AM - 5:00 PM",
+        "url": "https://coloradollcattorney.com/",
+        "address": "901 Pennsylvania Street, Denver, CO 80203"
+      }
+    </script>
+    <!-- Business Schema finish -->
+  </head>
+
+  <body id="page-top" class="index">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M9DSHVR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+
+    {% block content %}{% endblock %}
+
+    <footer>
+      <!-- {% include "footer.html" %} -->
+
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="{{ url_for('static',filename='scripts/jquery-3.5.1.slim.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='scripts/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='scripts/script.js') }}"></script>
+      {% include "footer.html" %}
+    </footer>
+  </body>
+</html>

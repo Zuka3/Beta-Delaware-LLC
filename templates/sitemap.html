@@ -1,0 +1,150 @@
+<title>Site Map</title>
+<meta
+  name="description"
+  content="Here you can check all the pages this website has!"
+/>
+<!-- Json-LD Breadcrumb -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://coloradollcattorney.com/",
+          "name": "Form A Colorado LLC"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://coloradollcattorney.com/Sitemap",
+          "name": "Sitemap"
+        }
+      }
+    ]
+  }
+</script>
+<!-- Json-LD Breadcrumb end -->
+
+{% extends "master.html" %} {% block content %} {% include
+"links/header/index.html" %}
+
+<section class="text-block bg-light-gray comma-list">
+  <div class="sitemap-div">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="map-signs"
+              class="svg-inline--fa fa-map-signs fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M507.31 84.69L464 41.37c-6-6-14.14-9.37-22.63-9.37H288V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v16H56c-13.25 0-24 10.75-24 24v80c0 13.25 10.75 24 24 24h385.37c8.49 0 16.62-3.37 22.63-9.37l43.31-43.31c6.25-6.26 6.25-16.38 0-22.63zM224 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V384h-64v112zm232-272H288v-32h-64v32H70.63c-8.49 0-16.62 3.37-22.63 9.37L4.69 276.69c-6.25 6.25-6.25 16.38 0 22.63L48 342.63c6 6 14.14 9.37 22.63 9.37H456c13.25 0 24-10.75 24-24v-80c0-13.25-10.75-24-24-24z"
+              ></path>
+            </svg>
+            Site Map
+          </h2>
+        </div>
+        <div class="col-md-12">
+          <ul class="list list-unstyled">
+            <li>
+              <a href="">Form A LLC</a>
+              <ul>
+                <li>
+                  <a href="">Articles of Organization</a>
+                </li>
+                <li><a href="">Operating Agreement</a></li>
+                <li><a href="">Single Member LLC</a></li>
+                <li><a href="">LLC Taxes</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Registered Agent</a>
+              <ul>
+                <li>
+                  <a href="">Registering a Foreign LLC</a>
+                </li>
+                <li>
+                  <a href="">Registering a Foreign Corp</a>
+                </li>
+                <li>
+                  <a href="">Filing A CO Periodic Report</a>
+                </li>
+                <li><a href="">LLC Name Search</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Form A Corporation</a>
+              <ul>
+                <li>
+                  <a href="">Articles of Incorporation</a>
+                </li>
+                <li>
+                  <a href="">Bylaws for Your Corporation</a>
+                </li>
+                <li>
+                  <a href="">S-Corporation Taxation</a>
+                </li>
+                <li>
+                  <a href="">Corporation Taxes</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <ul class="list list-unstyled">
+            <li>
+              <a href="{{ url_for('virtual_office') }}">Virtual Office</a>
+              <ul>
+                <li>
+                  <a href="{{ url_for('virtual_answering') }}"
+                    >Phone Forwarding & Answering</a
+                  >
+                </li>
+                <li>
+                  <a href="{{ url_for('virtual_scanning') }}"
+                    >Mail Forwarding</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li></li>
+            <li>
+              <a href="{{ url_for('holding') }}">Holding Company</a>
+              <ul>
+                <li>
+                  <a href="{{ url_for('ih_company') }}"
+                    >Investment Holding Companies</a
+                  >
+                </li>
+                <li>
+                  <a href="{{ url_for('family_trusts') }}"
+                    >Family Holding Company</a
+                  >
+                </li>
+                <li>
+                  <a href="{{ url_for('reh_company') }}"
+                    >Real Estate Holding Company</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "/links/index.html" %} {% include "contact.html" %} {% endblock %}

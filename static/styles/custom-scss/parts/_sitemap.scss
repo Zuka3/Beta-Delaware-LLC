@@ -1,0 +1,47 @@
+.sitemap-body > #mainNav {
+  background-color: #222222;
+}
+
+.sitemap-div {
+  padding-top: 15vh;
+  svg {
+    width: 30px;
+  }
+  .list {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 20px 0 40px;
+    font-size: 16px;
+    > li {
+      flex: 1 1 190px;
+      margin-bottom: 20px;
+      > a {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    ul {
+      list-style: square;
+    }
+    li {
+      margin: 5px 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #1a3642;
+    &::after {
+      transition: all 0.5s ease;
+      content: "\279C";
+      width: 10px;
+      height: 10px;
+      opacity: 0;
+      margin-left: 2px;
+    }
+    &:hover::after {
+      margin-left: 10px;
+      opacity: 1;
+    }
+  }
+}

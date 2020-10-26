@@ -1,0 +1,146 @@
+<nav class="navbar navbar-expand-lg flex-wrap">
+  <a class="nav-brand text-center w-100" href="{{ url_for('index') }}"
+    >Colorado Trust & LLC Attorney</a
+  >
+  <button
+    class="navbar-toggler ml-auto"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Estate Planning
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('estate') }}"
+            >Colorado Estate Planning</a
+          >
+          <a class="dropdown-item" href="{{ url_for('durable') }}"
+            >Durable Power of Attorney</a
+          >
+          <a class="dropdown-item" href="{{ url_for('care') }}">Living Will</a>
+          <a class="dropdown-item" href="{{ url_for('will') }}"
+            >Colorado Wills</a
+          >
+          <a class="dropdown-item" href="{{ url_for('probate') }}"
+            >Colorado Probate</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Business Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('index') }}"
+            >Form a Colorado LLC</a
+          >
+          <a class="dropdown-item" href="{{ url_for('registered_agents') }}"
+            >Colorado Registered Agent</a
+          >
+          <a class="dropdown-item" href="{{ url_for('virtual_office') }}"
+            >Colorado Virtual Office</a
+          >
+          <a class="dropdown-item" href="{{ url_for('incorporating') }}"
+            >Form A Colorado Corporation</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Trusts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('trust') }}"
+            >Asset Protection Trust</a
+          >
+          <a class="dropdown-item" href="{{ url_for('rlt') }}">Living Trust</a>
+          <a class="dropdown-item" href="{{ url_for('special_needs') }}"
+            >Special Needs Trust</a
+          >
+          <a class="dropdown-item" href="{{ url_for('land') }}">Land Trust</a>
+          <a class="dropdown-item" href="{{ url_for('family_trusts') }}"
+            >Family Trusts</a
+          >
+          <a class="dropdown-item" href="{{ url_for('colorado_trusts') }}"
+            >Colorado Trusts</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Additional Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('benefits') }}"
+            >Business Registration Benefits</a
+          >
+          <a class="dropdown-item" href="{{ url_for('soleprop') }}"
+            >Sole-Proprietorship Negatives</a
+          >
+          <a class="dropdown-item" href="{{ url_for('fees') }}">LLC Fees</a>
+          <a class="dropdown-item" href="{{ url_for('oa') }}"
+            >Operating Agreement</a
+          >
+          <a class="dropdown-item" href="{{ url_for('taxes') }}">LLC Taxes</a>
+          <a class="dropdown-item" href="{{ url_for('single') }}"
+            >Single Member LLC</a
+          >
+          <a class="dropdown-item" href="{{ url_for('privacy') }}"
+            >Anonymous LLCs</a
+          >
+          <a class="dropdown-item" href="{{ url_for('holding') }}"
+            >Holding Company Benefits</a
+          >
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('sitemap') }}"> Sitemap </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tel:+1-720-204-2444"> Call: 720-204-2444 </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,21 @@
+// Don't mix the order! otherwise styles will act differently
+
+@import "./parts/globals";
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+);
+
+@import "../bootstrap-scss/bootstrap";
+
+@import "./parts/header";
+@import "./parts/main";
+@import "./parts/footer";
+@import "./parts/mailchimp";
+@import "./parts/mediaQueries";
+@import "./parts/breadcrumb";
+@import "./parts/sitemap";
+@import "./parts/tableOfContent";
